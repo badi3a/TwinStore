@@ -1,27 +1,29 @@
-# TwinStore
+# E-Commerce Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.15.
+## Description
 
-## Development server
+This project is an e-commerce application built with Angular. The initial focus is on the **Home** component, which displays a list of categories in a table format. It includes a search feature that allows users to filter categories by name. Additionally, the project contains two reusable components: **Header** and **Footer**.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Display a list of categories in a table.
+- Search functionality to filter categories by name.
+- Reusable Header and Footer components.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
 
-## Build
+- Angular v16
+- TypeScript
+- HTML/CSS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+Follow these steps to run the project on your local machine:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Prerequisites
 
-## Running end-to-end tests
+- Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+- Install Angular CLI globally (if you haven't already):
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm install -g @angular/cli
