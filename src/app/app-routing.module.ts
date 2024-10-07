@@ -8,6 +8,7 @@ const ROUTES: Routes =[
   {path:'home',component: HomeComponent},
   {path:'list',component: ListProductComponent},
   {path:'',redirectTo:'home',pathMatch:"full"},
+  {path:'list/:id',component: ListProductComponent},
   {path:'**',component:NotFoundComponent},
 
 ]

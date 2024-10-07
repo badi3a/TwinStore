@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Product} from "../model/product";
 import {Category} from "../model/category";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-list-product',
@@ -10,7 +11,11 @@ import {Category} from "../model/category";
 export class ListProductComponent implements OnInit{
     listProducts: Product[];
     categories:Category[];
+    categoryId:any;
+    constructor(private activatedRoute: ActivatedRoute) {
+    }
     ngOnInit() {
+      this.categoryId=this.activatedRoute.snapshot.params['id'];
       this.categories=[
         { id: 0, name: 'Cuisine & Arts Culinaires',nbrLike:10,available:true, picture: 'https://tn.jumia.is/cms/0000_Refresh2023/TBs/2/TN_Artculinaire_TB.jpg' },
         { id: 1, name: 'Decoration', nbrLike:10,available:true,picture: 'https://tn.jumia.is/cms/0000_Refresh2023/April/W17/TB/TN_Deco_TB.jpg' },
@@ -49,5 +54,6 @@ export class ListProductComponent implements OnInit{
           quantity: 100,
           category: this.categories[4]  // Fashion
         }]
+
     }
 }

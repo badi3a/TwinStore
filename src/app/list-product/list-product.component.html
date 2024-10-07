@@ -10,13 +10,15 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let product of listProducts">
+  <ng-container *ngFor="let product of listProducts">
+    <tr *ngIf="product.category.id==categoryId || categoryId==null">
       <td>{{ product.id }}</td>
       <td>{{ product.name }}</td>
       <td>{{ product.price }}</td>
-      <td>{{ product.category }}</td>
+      <td>{{ product.category.name }}</td>
       <td><img src="{{product.picture}}" width="50%"></td>
     </tr>
+  </ng-container>
   </tbody>
 
 </table>

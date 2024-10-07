@@ -13,6 +13,11 @@
     <tr *ngIf="category.name.includes(searchCategory) || searchCategory==null">
       <td>{{category.name}}</td>
       <td><img src="{{category.picture}}"></td>
+      <td>
+        <a [routerLink]="['/list',category.id]">
+        show products by category
+        </a>
+      </td>
       <td [hidden]="category.nbrLike<20">Most liked categories</td>
       <td> <button [disabled]="!category.available"   class="btn-sm btn-success"
                    (click)="addLike(category)">like {{category.nbrLike}}</button></td>
