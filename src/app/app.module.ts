@@ -9,6 +9,8 @@ import {FormsModule} from "@angular/forms";
 import { ListProductComponent } from './list-product/list-product.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { HomeProductComponent } from './home-product/home-product.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     FooterComponent,
     HomeComponent,
     ListProductComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SidebarComponent,
+    HomeProductComponent
   ],
   imports: [
     BrowserModule,

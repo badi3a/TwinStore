@@ -15,7 +15,11 @@ export class ListProductComponent implements OnInit{
     constructor(private activatedRoute: ActivatedRoute) {
     }
     ngOnInit() {
-      this.categoryId=this.activatedRoute.snapshot.params['id'];
+    this.activatedRoute.params.subscribe(
+        (params)=>{
+          console.log(params['id']);
+          this.categoryId=this.activatedRoute.snapshot.params['id'];
+        })
       this.categories=[
         { id: 0, name: 'Cuisine & Arts Culinaires',nbrLike:10,available:true, picture: 'https://tn.jumia.is/cms/0000_Refresh2023/TBs/2/TN_Artculinaire_TB.jpg' },
         { id: 1, name: 'Decoration', nbrLike:10,available:true,picture: 'https://tn.jumia.is/cms/0000_Refresh2023/April/W17/TB/TN_Deco_TB.jpg' },
