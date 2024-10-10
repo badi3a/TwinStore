@@ -5,11 +5,13 @@ import {ListProductComponent} from "./list-product/list-product.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
 import {RouterModule, Routes} from "@angular/router";
 import {HomeProductComponent} from "./home-product/home-product.component";
+import {CardProductComponent} from "./card-product/card-product.component";
 const ROUTES: Routes =[
   {path:'home',component: HomeComponent},
-  {path:'list',component: HomeProductComponent},
+  {path:'list',component: HomeProductComponent, children:
+      [ {path:'card',component: CardProductComponent},
+        {path:':id',component:ListProductComponent},]},
   {path:'',redirectTo:'home',pathMatch:"full"},
-  {path:'list/:id',component:HomeProductComponent},
   {path:'**',component:NotFoundComponent},
 ]
 @NgModule({

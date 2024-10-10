@@ -13,5 +13,6 @@ export class SidebarComponent implements OnInit{
    }
    ngOnInit(){
      this.listCategory=this.dataService.listCategory;
+     console.log(this.listCategory);
    }
 }

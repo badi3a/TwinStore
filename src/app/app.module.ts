@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeProductComponent } from './home-product/home-product.component';
+import { CardProductComponent } from './card-product/card-product.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomeProductComponent } from './home-product/home-product.component';
     ListProductComponent,
     NotFoundComponent,
     SidebarComponent,
-    HomeProductComponent
+    HomeProductComponent,
+    CardProductComponent
   ],
   imports: [
     BrowserModule,
