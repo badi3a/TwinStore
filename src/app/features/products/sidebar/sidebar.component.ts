@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {DataService} from "../services/data.service";
-import {Category} from "../model/category";
+import {Category} from "../../../model/category";
+import {DataService} from "../../../shared/services/data.service";
+
 
 @Component({
   selector: 'app-sidebar',

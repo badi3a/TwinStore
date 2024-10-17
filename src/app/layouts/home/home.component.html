@@ -11,7 +11,7 @@
   <ng-container *ngFor="let category of listCategory">
     <!---<tr *ngIf="category.available">--->
     <tr *ngIf="category.name.includes(searchCategory) || searchCategory==null">
-      <td>{{category.name}}</td>
+      <td>{{category.name | uppercase}}</td>
       <td><img src="{{category.picture}}"></td>
       <td>
         <a [routerLink]="['list/category',category.id]">

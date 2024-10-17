@@ -1,8 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {Product} from "../model/product";
-import {Category} from "../model/category";
+
 import {ActivatedRoute} from "@angular/router";
-import {DataService} from "../services/data.service";
+
+import {DataService} from "../../../shared/services/data.service";
+import {Product} from "../../../model/product";
+import {Category} from "../../../model/category";
 
 @Component({
   selector: 'app-list-product',
